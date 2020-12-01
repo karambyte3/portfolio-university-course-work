@@ -1,0 +1,49 @@
+// ================ variables ===========
+$black: #000000;
+$white: #ffffff;
+$dark-gray: #101010;
+
+// ================ fonts ===============
+$roboto-black: 'Roboto Black';
+$roboto-bold: 'Roboto Bold';
+$roboto-light: 'Roboto Light';
+$roboto-medium: 'Roboto Medium';
+$roboto-regular: 'Roboto Regular';
+$roboto-thin: 'Roboto Thin';
+
+$raleway-bold: 'Raleway Bold';
+$raleway-semibold: 'Raleway SemiBold';
+$raleway-regular: 'Raleway Regular';
+$raleway-medium: 'Raleway Medium';
+$raleway-light: 'Raleway Light';
+$raleway-extralight: 'Raleway ExtraLight';
+$raleway-thin: 'Raleway Thin';
+
+$bebasneue: 'Bebas Neue Regular';
+
+// ================ mixins ==============
+@mixin breakpoint($class) {
+    @if $class == xs {
+        @media only screen and (max-width: 500px) { @content; }
+    }
+
+    @if $class == sm {
+        @media (max-width: 767px) { @content; }
+    }
+
+    @else if $class == md {
+        @media (max-width: 992px) { @content; }
+    }
+
+    @else if $class == lg {
+        @media (min-width: 1200px) { @content; }
+    }
+
+    @else {
+        @warn "Breakpoint mixin supports: xs, sm, md, lg";
+    }
+}
+
+// @mixin mobile() {
+//     @media (min-width: 768px) { @content; background-color: red;}
+// }

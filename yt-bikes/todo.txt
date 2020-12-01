@@ -1,0 +1,7 @@
+sections bikeable
+
+bike parts - showcase my bike parts in slider
+yt tues video from youtube
+blog - trending on blog (3 articles to show)
+gallery showcase - 6 images to show from gallery
+instagram - checkout my instagram
