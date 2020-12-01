@@ -58,6 +58,8 @@
   font-size: 17px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.6);
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 100 !important;
 }
 
 .hovereffect a.info {
@@ -70,6 +72,8 @@
   margin: 50px 0 0 0;
   background-color: transparent;
   opacity: 0;
+  font-family: "Raleway", sans-serif !important;
+  font-weight: lighter !important;
   filter: alpha(opacity=0);
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
@@ -82,7 +86,9 @@
   position: absolute;
   top: -20%;
   left: 8%;
-  padding: 70px;
+  /* padding: 70px; */
+  padding-top: 60px;
+  padding-bottom: 50px;
 }
 
 .hovereffect:hover a.info {
